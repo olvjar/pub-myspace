@@ -1,0 +1,377 @@
+/*
+        _       _                    
+       | |     ( )                   
+   ___ | |_   _|/ ___    ___ ___ ___ 
+  / _ \| \ \ / / / __|  / __/ __/ __|
+ | (_) | |\ V /  \__ \ | (__\__ \__ \
+  \___/|_| \_/   |___/  \___|___/___/
+
+its very very unorganized lmao. if u read this, u can message me and ill try 2 make an organized template for u
+*/
+
+
+body{
+    background-image: url(https://i.imgur.com/gjFhNmy.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: tahoma;
+    padding-top: 45px;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+#header{
+    background-color: #556B2E !important;
+}
+
+#hSub{
+    background-color: #B5B35D !important;
+}
+
+.blurbs, #box, .box, button {
+    background-color: white;
+    color: black;
+    padding-right: 2px;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
+    background-color: silver;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    color: #000;
+}
+
+#about, #who{
+    margin: 0 auto;
+    margin-top:10px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    background-color:#f4f9f3e8;
+    border: 2px solid darkgrey;
+    border-radius:2px;
+    width:95%;
+    margin-bottom:20px;
+}
+
+@media only screen and (min-width:769px){
+
+.topRight{
+    animation: orbit 10s linear infinite;
+}
+
+.topLeft>div, .short, .player, .boxInfo, .blogCard{
+    animation: orbitwo 10s linear infinite;
+}
+
+}
+
+.topLeft, .short{
+    max-width:339px;
+}
+
+.short {
+    margin-top: 0px;
+    background-color: white;
+    color: black;
+    padding-right: 2px;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
+    background-color: silver;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid silver;
+}
+
+.shortRight{
+    text-align: center;
+    width:auto;
+    font-weight:700;
+}
+
+#gender{
+    display:none;
+}
+
+.boxInfo>.boxHead {
+	display: none;
+}
+
+.boxInfo{
+    margin-top: 0px;
+    border-top: silver;
+    border-left: #000;
+    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000, inset 1px 0px #fff;
+}
+
+
+.boxHead{
+    background-color:#556B2E;
+    color: white;
+}
+
+#report, #block{
+    display: none;
+}
+
+
+.rightHead{
+    background: linear-gradient(135deg,#B5B35D 0,#00ff8000 100%);
+    color: #556B2E;
+}
+
+.rightHead b{
+    display:none;
+}
+
+h4{
+    color:#654321;
+    margin-left: 10px;
+}
+
+#age{
+    visibility:hidden;
+}
+
+#age:after{
+    content: "???";
+    visibility:visible;
+}
+
+#name{
+    background-color:#556B2E;
+    padding-top:5px;
+    padding:2px;
+    font-size:20px;
+    text-align:center;
+    letter-spacing: 2px;
+    margin-bottom:0px;
+    color: white;
+    font-weight: 700;
+    background: #556B2E;
+    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+.box.fwiends {
+    margin-bottom: 30px;
+}
+
+.fwiendCounter, #viewFriends{
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fwiendFace img {
+    width: 100px;
+    height:100px;
+    overflow: hidden;
+    background-color: #CECECE;
+    border: 2px solid #9C9B9B;
+    border-radius: 2px;
+    margin: 10px;
+}
+
+.fwiendCounter {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.fwiendCount {
+    color: #556b41;
+    font-size: 15px;
+}
+
+.fwiendCounter b{
+    font-size: 0px;
+}
+
+.fwiendCounter b:after{
+    content: " very swaggy and wonderful people";
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#viewFriends {
+    display: none;
+}
+
+.boxcomments{
+    margin-top:15px;
+}
+
+.tableLeft {
+    color: #ffffff;
+    background: none;
+    padding: 10px;
+    border-bottom: 1px solid #4A4A27;
+    vertical-align: middle;
+}
+
+.tableLeft img{
+    width:40px;
+    height:40px;
+    display:none;
+}
+
+
+.tableRight {
+    margin-left:0;
+    padding: 10px;
+    background: none;
+    width:75%;
+    border-bottom: 1px solid #4A4A27;
+}
+
+.date{
+    padding: 0px;
+    text-align: left;
+}
+
+.tableRight p{
+    margin: 0;
+    text-transform: none;
+}
+
+.url {
+    font-size: 0px;
+    background: url(https://i.imgur.com/gVYqaId.gif);
+    background-size: auto;
+    background-size: 100%;
+    position: fixed;
+    right: -30px;
+    bottom: 50px;
+    color: transparent !important;
+    height: 285px;
+    width: 390px;
+    border: none;
+    box-shadow: none;
+    padding: 0 !important;
+    z-index: 1000;
+    animation: phwog 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* blog stuff */
+
+.blogs{
+    text-align: center;
+    padding:10px;
+}
+
+.blogCorpus {
+    text-align: left;
+    text-justify: auto;
+    word-spacing: 2px;
+    letter-spacing: .4px;
+    font-family: helvetica;
+    text-transform: none;
+    background: darkkhaki;
+    padding: 10px;
+    border: 2px solid darkgray;
+}
+
+.blogCorpus h1 {
+    text-align: center;
+    animation: textpop 2.5s 2 both;
+}
+
+.topLeft.blogCard{
+    background-color: rgba(85,107,46,0.53);
+    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
+    
+}
+
+.topLeft.blogCard div{
+    display:none;
+}
+
+.player:before{
+    content: "";
+    padding: 10px;
+    bottom: 5px;
+    display: block;
+    position: relative;
+    width: calc(40% -20px);
+    height: 150px;
+    max-width: 376px;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-image: url("https://media3.giphy.com/media/l46Ck4CGc762ion28/giphy.gif");
+}
+
+.extended{
+    background: silver;
+    color: darkolivegreen;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF;
+    padding:20px;
+}
+
+.extended h3{
+        font-size:0px;
+}
+
+.extended h3:after{
+        content:"float with me";
+        font-size:15px;
+        animation: ext 5s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 0; 
+}
+
+/* animations */
+
+@keyframes textpop {
+  0% {
+    text-shadow: 0 0 #aaa, 0 0 #aaa, 0 0 #aaa, 0 0 #aaa;
+    transform: translateY(0);
+    color:white;
+  }
+  100% {
+    text-shadow: 0 -1px #aaa, 0 -2px #aaa, 0 -3px #aaa, 0 -4px #aaa;
+    transform: translateY(8px);
+    color: darkolivegreen;
+  }
+}
+
+@keyframes phwog {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ext{
+    0% {opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.0;}
+}
+
+@keyframes orbit{
+    0% {
+    transform: rotate(0deg) translateX(15px) rotate(0deg);
+  }
+
+    100% {
+    transform: rotate(-360deg) translateX(15px) rotate(360deg);
+  }
+}
+
+@keyframes orbitwo{
+    0% {
+    transform: rotate(0deg) translateX(15px) rotate(0deg);
+  }
+
+    100% {
+    transform: rotate(360deg) translateX(15px) rotate(-360deg);
+  }
+}
