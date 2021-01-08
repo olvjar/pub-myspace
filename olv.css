@@ -165,6 +165,15 @@ h4{
     padding-bottom: 5px;
 }
 
+@media only screen and (max-height: 812px){
+.fwiendFace img {
+    margin: 5px !important;
+    height: 60px !important;
+    width: 60px !important;
+}
+
+}
+
 .fwiendFace img {
     width: 100px;
     height:100px;
@@ -172,18 +181,7 @@ h4{
     background-color: #CECECE;
     border: 2px solid #9C9B9B;
     border-radius: 2px;
-    margin: 10px;
-}
-
-@media only screen and (max-width:812px){
-.fwiendFace img {
-    overflow: hidden;
-    background-color: #CECECE;
-    border: 2px solid #9C9B9B;
-    border-radius: 2px;
-    margin: 5px;
-    height: 60px;
-}
+    margin: 0 auto;
 }
 
 .fwiendCounter {
