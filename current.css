@@ -38,6 +38,7 @@ a:hover{
 
 #header{
     background-color: #556B2E !important;
+    height:40px !important;
 }
 
 #header .logo span {
@@ -48,7 +49,7 @@ a:hover{
     background-size: contain;
     font-size: x-large;
     top: 0px;
-    height: 50px !important;
+    height: 40px !important;
 }
 
 #header .logo span::before {
