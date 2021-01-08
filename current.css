@@ -40,8 +40,26 @@ a:hover{
     background-color: #556B2E !important;
 }
 
+#header .logo span {
+    color: rgba(255, 255, 255, 0) !important;
+    background-image: url(https://i.imgur.com/nh9YlWA.gif);
+    background-position: 120px;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    font-size: x-large;
+    top: 0px;
+    height: 50px !important;
+}
+
+#header .logo span::before {
+    color: #fff !important;
+    content: "olv.windows93.net";
+    font-size: 15px;
+}
+
 #hSub{
     background-color: #B5B35D !important;
+    top: 30px !important;
 }
 
 .blurbs, #box, .box, button {
