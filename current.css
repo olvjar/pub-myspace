@@ -277,6 +277,22 @@ h4{
 
 }
 
+.url:active::before{
+    visibility:hidden;
+}
+.url:active::after{
+    top:60px;
+    position:relative;
+    visibility:visible;
+    font-size:30px;
+    font-family: consolas;
+    font-weight: bold;
+    color:#fff;
+    content: " hey, stop that! ";
+    animation: hey 1s infinite;
+    
+}
+
 /* blog stuff */
 
 .blogs{
@@ -337,10 +353,9 @@ h4{
 }
 
 .extended h3:after{
-        content:"float with me";
+        content:"float with me, but dont click my balloon.";
         font-size:15px;
-        animation: ext 5s ease-out;
-        animation-iteration-count: infinite;
+        animation: ext 5s ease-out infinite;
         opacity: 0; 
 }
 
@@ -379,6 +394,20 @@ h4{
     10%, 30%, 50%, 70%, 90%
     {
         transform: scale(1.10);
+    }
+}
+
+@keyframes hey
+{
+    0%, 20%, 40%, 60%, 80%, 100%
+    {
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0.37);
+    }
+    10%, 30%, 50%, 70%, 90%
+    {
+        font-size: 35px;
+        background-color: rgba(0, 0, 0, 0.37);
     }
 }
 
