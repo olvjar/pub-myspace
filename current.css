@@ -6,9 +6,8 @@
  | (_) | |\ V /  \__ \ | (__\__ \__ \
   \___/|_| \_/   |___/  \___|___/___/
 
-
+steal and i break your neck
 */
-
 
 body{
     background-image: url(https://i.imgur.com/gjFhNmy.png);
@@ -32,9 +31,10 @@ a:hover{
 #top a>div:hover, .tableLeft>a>div:hover{
     animation: gradcolor 3s infinite, beat 3s infinite;
     background-image: linear-gradient(50deg, #996514, #B5B35D);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 #header{
     background-color: #556B2E !important;
@@ -96,10 +96,26 @@ a:hover{
     animation: orbitwo 10s linear infinite;
 }
 
+.blurbs{
+    border: 35px solid transparent;
+    border-image: url(https://i.imgur.com/sKYprsB.png) 35 round;
 }
 
-.topLeft, .short{
-    max-width:339px;
+
+.comments{
+    border: 35px solid transparent;
+    border-image: url(https://i.imgur.com/c65v6Vv.png) 35 round;
+}
+
+
+.fwiends{
+    border: 35px solid transparent;
+    border-image: url(https://i.imgur.com/zKuy0Yu.png) 35 round;
+}
+
+.blurbs, .comments, .fwiends{
+    box-shadow: inset 1px 1px transparent;
+}
 }
 
 .short {
@@ -126,7 +142,7 @@ a:hover{
     display:none;
 }
 
-.boxInfo>.boxHead {
+.boxInfo>.boxHead, .comments>#form>.boxHead{
 	display: none;
 }
 
@@ -172,19 +188,19 @@ h4{
 }
 
 #name{
-    background-color:#556B2E;
-    padding-top:5px;
     padding:2px;
     font-size:20px;
     text-align:center;
     letter-spacing: 2px;
     margin-bottom:0px;
     color: white;
-    font-weight: 700;
+    font-weight: bold;
     background: #556B2E;
     box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
     border-right: 1px solid gray;
     border-top: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .fwiends {
@@ -197,8 +213,8 @@ h4{
 
 @media only screen and (max-height: 812px){
 .fwiendFace img {
-    height: 60px !important;
-    width: 60px !important;
+    height: 65px !important;
+    width: 65px !important;
 }
 
 }
@@ -207,11 +223,9 @@ h4{
     width: 120px;
     height:120px;
     background-color: #CECECE;
-    border: 2px solid #9C9B9B;
-    border-radius: 2px;
     margin: 0 auto;
     object-fit: cover;
-    object-position:center;
+    object-position:top;
 }
 
 .fwiendCounter {
@@ -241,12 +255,8 @@ h4{
     display: none;
 }
 
-.boxcomments{
-    margin-top:15px;
-}
 
 .tableLeft {
-    color: #ffffff;
     background: none;
     padding: 10px;
     border-bottom: 1px solid #4A4A27;
@@ -278,13 +288,14 @@ h4{
     text-transform: none;
 }
 
+@media only screen and (min-width:769px){
 .url {
+    display: initial !important;
     font-size: 0px;
-    background: url(https://i.imgur.com/gVYqaId.gif);
-    background-size: auto;
+    background: url(https://i.imgur.com/gVYqaId.gif) no-repeat;
     background-size: 100%;
     position: fixed;
-    right: -30px;
+    left: -30px;
     bottom: 50px;
     color: transparent !important;
     height: 285px;
@@ -300,8 +311,7 @@ h4{
     visibility:hidden;
 }
 .url:active::after{
-    top:60px;
-    position:relative;
+    margin-left:60px;
     visibility:visible;
     font-size:30px;
     font-family: consolas;
@@ -309,7 +319,12 @@ h4{
     color:#fff;
     content: " hey, stop that! ";
     animation: hey 1s infinite;
-    
+}
+
+}
+
+.url{
+    display: none;
 }
 
 /* blog stuff */
@@ -346,8 +361,9 @@ h4{
     display:none;
 }
 
+/*
 .player:before{
-    content: "";
+    content: "toast";
     padding: 10px;
     bottom: 5px;
     display: block;
@@ -355,10 +371,9 @@ h4{
     width: calc(40% -20px);
     height: 150px;
     max-width: 376px;
-    background-position: 0 0;
-    background-size: 100% 100%;
-    background-image: url("https://media3.giphy.com/media/l46Ck4CGc762ion28/giphy.gif");
+    
 }
+*/
 
 .extended{
     background: silver;
@@ -467,6 +482,5 @@ h4{
     opacity: 1;
   }
 }
-
-    animation: phwog 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+animation: phwog 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
 */
