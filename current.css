@@ -335,8 +335,7 @@ h4{
 }
 
 .blogCorpus {
-    text-align: left;
-    text-justify: auto;
+    text-align: justify;
     word-spacing: 2px;
     letter-spacing: .4px;
     font-family: helvetica;
