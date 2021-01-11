@@ -365,6 +365,11 @@ h4{
     display:none;
 }
 
+.player{
+    margin-top:0px;
+    width: auto;
+}
+
 /*
 .player:before{
     content: "toast";
