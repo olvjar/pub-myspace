@@ -148,6 +148,7 @@ a:hover{
 
 .boxInfo{
     margin-top: 0px;
+    margin-bottom: 0px;
     border-top: silver;
     border-left: #000;
     box-shadow: 1px 0 #000,0 1px #000,1px 1px #000, inset 1px 0px #fff;
