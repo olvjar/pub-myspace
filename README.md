@@ -1,3 +1,3 @@
 # myspace
 
-to organize my shit for myspace, basically.
+public repo to publish things im willing to show:)
