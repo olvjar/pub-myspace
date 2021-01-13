@@ -142,10 +142,6 @@ a:hover{
     display:none;
 }
 
-.boxInfo>.boxHead, .comments>#form>.boxHead{
-	display: none;
-}
-
 .boxInfo{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -158,6 +154,7 @@ a:hover{
 .boxHead{
     background-color:#556B2E;
     color: white;
+    display: none;
 }
 
 #report, #block{
