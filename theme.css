@@ -354,3 +354,7 @@ a:hover{
     color: #302020;
     text-shadow: 2px 2px 2px var(--main-text-color);
 }
+
+.topRight a:hover{
+    background-color: var(--sub-text-color);
+}
