@@ -29,13 +29,16 @@ steal and i break your neck
     --sub-text-color: #7850f0;
 }
 
+a{
+    font-weight:bold;
+}
 
 #header{
     background: var(--bg-color-menu) !important;
 }
 
 #hSub{
-    background: #e8f858 !important;
+    background: #bbc657 !important;
 }
 
 #hSub a{
