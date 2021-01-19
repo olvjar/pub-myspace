@@ -346,10 +346,6 @@ h4{
 
 /* links */
 
-a:hover{
-    background-color: var(--sub-text-color);
-}
-
 .comments>a, .fwiends a{
     color: #302020;
     text-shadow: 2px 2px 2px var(--main-text-color);
