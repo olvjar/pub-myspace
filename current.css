@@ -34,8 +34,11 @@ steal and i break your neck
     background: var(--bg-color-menu) !important;
 }
 
-#hsub{
-    background: var(--main-text-color) !important;
+#hSub{
+    background: var(--main-text-color);
+}
+
+#hSub a{
     color: #302020;
 }
 
