@@ -9,197 +9,142 @@
 steal and i break your neck
 */
 
+/* imports */
+@font-face {
+    font-family: apple;
+    src: url(./fonts/apple.ttf);
+}
+
+@font-face {
+    font-family: boing;
+    src: url(./fonts/saturn.ttf);
+  }
+
+
+/* roots */
+:root{
+    --bg: url();
+    --bg-color-menu: #280828;
+    --main-text-color: #f0f0b8;
+    --sub-text-color: #7850f0;
+}
+
+
+
+/* main */
+container{
+    max-width: 1080px;
+}
+
 body{
-    background-image: url(./img/bg.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: tahoma;
-    padding-top: 45px;
+    font-family: Consolas;
     font-size: 15px;
-    text-transform: lowercase;
+    margin-top: 40px;
+    background-color: #000;
+    color: var(--main-text-color)
 }
 
-a{
-    color:#654321;
-}
-
-a:hover{
-    font-weight: bolder;
-}
-
-#top a>div:hover, .tableLeft>a>div:hover{
-    animation: gradcolor 3s infinite, beat 3s infinite;
-    background-image: linear-gradient(50deg, #996514, #B5B35D);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-#header{
-    background-color: #556B2E !important;
-    height:40px !important;
-}
-
-#header .logo span {
-    color: rgba(255, 255, 255, 0) !important;
-    background-image: url(https://i.imgur.com/nh9YlWA.gif);
-    background-position: 120px;
-    background-repeat: no-repeat !important;
-    background-size: contain;
-    font-size: x-large;
-    top: 0px;
-    height: 40px !important;
-}
-
-#header .logo span::before {
-    color: #fff !important;
-    content: "olv.windows93.net";
-    font-size: 15px;
-}
-
-#hSub{
-    background-color: #B5B35D !important;
-    top: 30px !important;
-}
-
-.blurbs, #box, .box, button {
-    padding-right: 2px;
-    padding-left: 3px;
-    padding-top: 3px;
-    padding-bottom: 2px;
-    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
-    background-color: silver;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-    color: #000;
-}
-
-#about, #who{
-    margin: 0 auto;
-    margin-top:10px;
-    letter-spacing: 0.5px;
+.topLeft, .blurbs{
+    background-color: var(--bg-color-menu);
     padding: 10px;
-    background-color:#f4f9f3e8;
-    border: 2px solid darkgrey;
-    border-radius:2px;
-    width:95%;
-    margin-bottom:20px;
-}
-
-@media only screen and (min-width:769px){
-.topRight{
-    animation: orbit 10s linear infinite;
-}
-
-.topLeft>div, .short, .player, .boxInfo, .blogCard{
-    animation: orbitwo 10s linear infinite;
+    
 }
 
 .blurbs{
-    border: 35px solid transparent;
-    border-image: url(./img/blurbs-border.png) 35 round;
+    border: 15px solid transparent;
+    border-image:url(./img/border.png) 35 round;
 }
 
+.fwiends, .comments{
+    border: 20px solid transparent;
+    border-image:url(./img/border-two.png) 20 round;
+    background-image: url(./img/bg-two.png);
+    background-attachment: local;
+}
+
+.topLeft{
+    border: 20px solid transparent;
+    border-image:url(./img/border-three.png) 20 round;
+    width: calc(40% - 60px);
+}
+
+@media only screen and (max-width: 812px){
+    .topLeft{
+        width: auto;
+        padding:20px;
+    }
+
+    .avatar{
+        width: 150px;
+    }
+    
+}
+
+@media only screen and (min-width:769px){
+.url {
+    display: initial !important;
+    font-size: 0px;
+    background: url(./img/hello.gif) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 449px;
+    bottom: 320px;
+    height: 160px;
+    width: 390px;
+    border: none;
+    padding: 0 !important;
+
+}
+}
+
+/* comments */
 
 .comments{
-    border: 35px solid transparent;
-    border-image: url(./img/comments-border.png) 35 round;
+    padding: 20px;
+    color: #302020;
 }
-
-
-.fwiends{
-    border: 35px solid transparent;
-    border-image: url(./img/friends-border.png) 35 round;
-}
-
-.blurbs, .comments, .fwiends{
-    box-shadow: inset 1px 1px transparent;
-}
-}
-
-.short {
-    margin-top: 0px;
-    background-color: white;
-    color: black;
-    padding-right: 2px;
-    padding-left: 3px;
-    padding-top: 3px;
-    padding-bottom: 2px;
-    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
-    background-color: silver;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid silver;
-}
-
-.shortRight{
-    text-align: center;
-    width:auto;
-    font-weight:700;
-}
-
-#gender{
-    display:none;
-}
-
-.boxInfo{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-top: silver;
-    border-left: #000;
-    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000, inset 1px 0px #fff;
-}
-
 
 .boxHead{
-    background-color:#556B2E;
-    color: white;
-    display: none;
+    background: #302020;
+    color: var(--main-text-color);
 }
 
-#report, #block{
-    display: none;
+#userWall { 
+    height: 500px;
+    width: auto;
+    overflow: auto;
+    margin-top: 0px;
+}
+  
+form > textarea#commentInput{
+    width: 98%;
+    padding: 5px;
+    background: #000;
+    color: #fcd4c9;
+    font-family: monaco, courier new;
+    font-size: 11px;
+    margin-top: 0px;
+}
+  
+.tableRight{
+    background-color: #f8f8c8;
+    box-shadow: inset 2px -5px 0px 8px #889080;
 }
 
-
-.rightHead{
-    background: linear-gradient(135deg,#B5B35D 0,#00ff8000 100%);
-    color: #556B2E;
+.tableLeft {
+    background: none;
+    padding: 10px;
+    vertical-align: middle;
 }
 
-.rightHead b{
+.tableLeft img{
     display:none;
 }
 
-h4{
-    color:#654321;
-    margin-left: 10px;
-}
-
-#age{
-    visibility:hidden;
-}
-
-#age:after{
-    content: "???";
-    visibility:visible;
-}
-
-#name{
-    padding:2px;
-    font-size:20px;
-    text-align:center;
-    letter-spacing: 2px;
-    margin-bottom:0px;
-    color: white;
-    font-weight: bold;
-    background: linear-gradient(to bottom, #516829 0%, #38481A 50%, #314017 100%);
-    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
-    border-right: 1px solid gray;
-    border-top: 1px solid gray;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
+/* fwiends */
 
 .fwiends {
     margin-bottom: 30px;
@@ -220,10 +165,12 @@ h4{
 .fwiendFace img {
     width: 110px;
     height:110px;
-    background-color: #CECECE;
+    background-color: #f8f8c8;
+    box-shadow: inset 5px -2px 2px 8px #889080;
     margin: 0 auto;
     object-fit: cover;
     object-position:top;
+    border-radius: 5px;
 }
 
 .fwiendCounter {
@@ -233,7 +180,7 @@ h4{
 }
 
 .fwiendCount {
-    color: #556b41;
+    color: #302020;
     font-size: 15px;
 }
 
@@ -242,7 +189,8 @@ h4{
 }
 
 .fwiendCounter b:after{
-    content: " very swaggy and wonderful people";
+    color: #302020;
+    content: " memories saved.";
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -253,241 +201,152 @@ h4{
     display: none;
 }
 
+/* formatting */
 
-.tableLeft {
-    background: none;
-    padding: 10px;
-    border-bottom: 1px solid #4A4A27;
-    vertical-align: middle;
-}
-
-.tableLeft img{
-    width:40px;
-    height:40px;
-    display:none;
-}
-
-
-.tableRight {
-    margin-left:0;
-    padding: 10px;
-    background: none;
-    width:75%;
-    border-bottom: 1px solid #4A4A27;
-}
-
-.date{
-    padding: 0px;
-    text-align: left;
-}
-
-.tableRight p{
-    margin: 0;
-    text-transform: none;
-}
-
-@media only screen and (min-width:769px){
-.url {
-    display: initial !important;
+#gender, #country{
     font-size: 0px;
-    background: url(./img/frog.gif) no-repeat;
-    background-size: 100%;
-    position: fixed;
-    left: -30px;
-    bottom: 50px;
-    color: transparent !important;
-    height: 285px;
-    width: 390px;
-    border: none;
-    box-shadow: none;
-    padding: 0 !important;
-    z-index: 1000;
-
+    display: initial;
 }
 
-.url:active::before{
-    visibility:hidden;
-}
-.url:active::after{
-    margin-left:60px;
-    visibility:visible;
-    font-size:30px;
-    font-family: consolas;
-    font-weight: bold;
-    color:#fff;
-    content: " hey, stop that! ";
-    animation: hey 1s infinite;
+.shortRight>div+div+div{
+    display: block;
 }
 
+#gender::after{
+    font-size: 15px;
+    content: "Level: ???";
 }
 
-.url{
-    display: none;
+#country::after{
+    font-size: 15px;
+    content: "Save Frog";
 }
 
-/* blog stuff */
-
-.blogs{
+.shortRight{
     text-align: center;
-    padding:10px;
+    width:auto;
 }
 
-.blogCorpus {
-    text-align: justify;
-    word-spacing: 2px;
-    letter-spacing: .4px;
-    font-family: helvetica;
-    text-transform: none;
-    background: darkkhaki;
-    padding: 10px;
-    border: 2px solid darkgray;
-}
+.boxInfo{
+    margin-bottom: 0;
+    margin-top: 10px;
+    border:none;
 
-.blogCorpus h1 {
-    text-align: center;
-    animation: textpop 2.5s 2 both;
-}
-
-.topLeft.blogCard{
-    background-color: rgba(85,107,46,0.53);
-    box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff;
-    
-}
-
-.topLeft.blogCard div{
-    display:none;
-}
-
-.extended{
-    display:none;
 }
 
 .player{
-    margin-top:0px;
-    width: auto;
+    border:none;
+    background:none;
+    color: inherit;
+    margin-top: 10px;
+    margin-bottom: 5px
 }
 
-/*
-.player:before{
-    content: "toast";
-    padding: 10px;
-    bottom: 5px;
-    display: block;
-    position: relative;
-    width: calc(40% -20px);
-    height: 150px;
-    max-width: 376px;
-    
+.controlBar{
+    background-color:rgb(25, 14, 147);
 }
 
-.extended{
-    background: silver;
-    color: darkolivegreen;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF;
-    padding:20px;
+.fwiends{
+    margin-top: 40px;
 }
 
-.extended h3{
-        font-size:0px;
+.boxButton{
+    background-image: url(./img/e.png) !important;
+    background-position: 10% 45%;
+    color: var(--main-text-color)
 }
 
-.extended h3:after{
-        content:"float with me, but dont click my balloon.";
-        font-size:15px;
-        animation: ext 5s ease-out infinite;
-        opacity: 0; 
+.boxButton:hover{
+    font-weight: bolder;
+    color: var(--sub-text-color)
 }
 
-*/
+#add, #sMsg, #report, #block{font-size: 0px;}
 
-/* frames */
-
-@keyframes textpop {
-  0% {
-    text-shadow: 0 0 #aaa, 0 0 #aaa, 0 0 #aaa, 0 0 #aaa;
-    transform: translateY(0);
-    color:white;
-  }
-  100% {
-    text-shadow: 0 -1px #aaa, 0 -2px #aaa, 0 -3px #aaa, 0 -4px #aaa;
-    transform: translateY(8px);
-    color: darkolivegreen;
-  }
+#add::after{
+    font-size:13px;
+    content: "Save Memories";
 }
 
-@keyframes gradcolor {
-    from {
-      filter: hue-rotate(0deg);
-    }
-    50% {
-      filter: hue-rotate(360deg);
-    }
-    to {
-      filter: hue-rotate(-360deg);
-    }
-}
-@keyframes beat
-{
-    0%, 20%, 40%, 60%, 80%, 100%
-    {
-        transform: scale(1);
-    }
-    10%, 30%, 50%, 70%, 90%
-    {
-        transform: scale(1.10);
-    }
+#sMsg::after{
+    font-size:13px;
+    content: "Send Memories";
 }
 
-@keyframes hey
-{
-    0%, 20%, 40%, 60%, 80%, 100%
-    {
-        font-size: 30px;
-        background-color: rgba(0, 0, 0, 0.37);
-    }
-    10%, 30%, 50%, 70%, 90%
-    {
-        font-size: 35px;
-        background-color: rgba(0, 0, 0, 0.37);
-    }
+#report::after{
+    font-size:13px;
+    content: "Report Memories";
 }
 
-@keyframes ext{
-    0% {opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {opacity: 0.0;}
+#block::after{
+    font-size:13px;
+    content: "Block Memories";
 }
 
-@keyframes orbit{
-    0% {
-    transform: rotate(0deg) translateX(15px) rotate(0deg);
-  }
+/* removals */
 
-    100% {
-    transform: rotate(-360deg) translateX(15px) rotate(360deg);
-  }
+#age{
+    display: none;
 }
 
-@keyframes orbitwo{
-    0% {
-    transform: rotate(0deg) translateX(15px) rotate(0deg);
-  }
-
-    100% {
-    transform: rotate(360deg) translateX(15px) rotate(-360deg);
-  }
+.shortRight>div+div{
+    display: none;
 }
 
-
-/* @keyframes phwog {
-  0% {
-    transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.url {
+    display: none;
 }
-animation: phwog 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-*/
+
+.extended {
+    display: none;
+}
+
+.boxInfo>.boxHead, .rightHead{
+    display: none;
+}
+
+#name{
+    display:none;
+}
+
+.blurbs>.rightHead{
+    display:none;
+}
+
+.blogs>div>b{
+    display:none;
+}
+
+/* headers */
+
+.blurbs>h4{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#about>h4, #who>h4{
+    color: #7963b9;
+}
+
+h4{
+    color: var(--sub-text-color);
+}
+
+/* blog */
+
+.blogCard{
+    width: 180px;
+    border: 15px solid transparent;
+    border-image: url(https://i.imgur.com/woyw6dW.png) 20 round;
+}
+
+.blogCard>div, .blogCard>#gender, .blogCard>#country{
+    display:none;
+}
+
+/* links */
+
+.comments>a, .fwiends a{
+    color: #302020;
+    text-shadow: 2px 2px 2px var(--main-text-color);
+}
