@@ -131,6 +131,7 @@ body{
     width: auto;
     overflow: auto;
     margin-top: 0px;
+    background-color: rgba(242, 242, 215, 0.62);
 }
   
 form > textarea#commentInput{
