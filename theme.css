@@ -11,12 +11,12 @@ steal and i break your neck
 
 /* imports */
 @font-face {
-    font-family: 'apple';
+    font-family: apple;
     src: url(./fonts/apple.ttf);
 }
 
 @font-face {
-    font-family: 'boing';
+    font-family: boing;
     src: url(./fonts/saturn.ttf);
   }
 
