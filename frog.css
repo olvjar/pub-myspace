@@ -101,7 +101,7 @@ body{
 .url {
     display: initial !important;
     font-size: 0px;
-    background: url(./img/hello.gif) no-repeat;
+    background: url(./img/welcome.gif) no-repeat;
     background-size: 100%;
     position: fixed;
     left: 449px;
