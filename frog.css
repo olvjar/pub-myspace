@@ -362,6 +362,7 @@ h4{
 
 .blog{
     color: #302020;
+    font-weight: bold;
     background: #d8e030;
     border: 20px solid transparent;
     border-image: url(./img/border-two.png) 20 round;
