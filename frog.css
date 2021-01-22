@@ -69,6 +69,7 @@ body{
 
 .blurbs{
     border: 15px solid transparent;
+    border-radius: 20px;
     border-image:url(./img/border.png) 35 round;
 }
 
@@ -364,6 +365,7 @@ h4{
     background: #d8e030;
     border: 20px solid transparent;
     border-image: url(./img/border-two.png) 20 round;
+    border-radius: 20px;
 }
 
 
